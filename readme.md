@@ -18,8 +18,8 @@ After installing postgresql
 You can find diffrent and better sources for documentation on postgres commands.However, in this repo I have only added those commands which I used.If you have had help from this repo, don't forget to give a star :wink:
 ***
 ## Useful Commands
- - ```\l``` for the list of postgresql databases created in your local machine.
- - ```\du``` for the list of usersand their roles who have access to the databases.
+ - ```\l```  - for the list of postgresql databases created in your local machine.
+ - ```\du``` -  for the list of users and their roles who have access to the databases.
 ***
 ## Creating Databse
-``` CREATE DATABASE db_name; ```
+```bash CREATE DATABASE db_name; ```
