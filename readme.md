@@ -10,7 +10,16 @@
  - follow this link
  ```https://www.postgresql.org/download/windows/ ```
 ***
+After installing postgresql
+- a default user 'postgress' and database 'postgres' is created.
+- you can access database using GUI Client(pgAdmin) or Command-Prompt(psql) both are installed with the postgresql. 
+
 ## From Author
 You can find diffrent and better sources for documentation on postgres commands.However, in this repo I have only added those commands which I used.If you have had help from this repo, don't forget to give a star :wink:
 ***
-
+## Useful Commands
+ - ```\l``` for the list of postgresql databases created in your local machine.
+ - ```\du``` for the list of usersand their roles who have access to the databases.
+***
+## Creating Databse
+``` CREATE DATABASE db_name; ```
