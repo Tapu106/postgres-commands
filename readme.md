@@ -1,4 +1,4 @@
-
+ 
 ![Postgresql Icon](https://sourcegraphstatic.com/blog/postgres-version-update/postgres-version-update.jpg)
 ***
 # Postgresql
@@ -12,7 +12,7 @@
 ***
 After installing postgresql
 - a default user 'postgress' and database 'postgres' is created.
-- you can access database using GUI Client(pgAdmin) or Command-Prompt(psql) both are installed with the postgresql. 
+- you can access database using GUI Client(pgAdmin) or Command-Prompt(psql) both are installed with the postgresql. However, I will be using the psql.
 
 ## From Author
 You can find diffrent and better sources for documentation on postgres commands.However, in this repo I have only added those commands which I used.If you have had help from this repo, don't forget to give a star :wink:
@@ -20,6 +20,46 @@ You can find diffrent and better sources for documentation on postgres commands.
 ## Useful Commands
  - ```\l```  - for the list of postgresql databases created in your local machine.
  - ```\du``` -  for the list of users and their roles who have access to the databases.
+ - ```\d``` - list of schemas or tables a particular database have.
+ - ```\d table_name``` - details of the specified table.   
 ***
-## Creating Databse
-```bash CREATE DATABASE db_name; ```
+## Create a  Database
+```
+CREATE DATABASE db_name;
+```
+***
+Connect to a Database
+```
+\c db_name
+```
+***
+Drop a Database
+```
+DROP DATABASE db_name;
+```
+***
+Create a Table
+```
+CREATE TABLE table_name (column_name + data_type + constraints if any);
+```
+***
+Drop a Table
+```
+DROP TABLE table_name;
+```
+***
+Insert records into a Table
+```
+INSERT INTO table_name (col1_name, col2_name) VALUES (col1_value,col2_value);
+```
+***
+Limit the query Results
+```
+select * from table_name LIMIT number;
+```
+***
+retrieve limited query results after a specified index
+```
+select * from table_name OFFSET index_after_you_want_data LIMIT number;
+```
+***
